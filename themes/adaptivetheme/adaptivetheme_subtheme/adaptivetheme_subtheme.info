@@ -1,0 +1,156 @@
+; $Id: adaptivetheme_subtheme.info,v 1.2.2.5 2010/10/25 08:55:44 jmburnz Exp $
+
+;----------// Theme Information
+  name        = AT Subtheme
+  description = Starter subtheme for Adaptivetheme. Copy and paste this subtheme to get started building your own Drupal theme.
+  core        = 6.x
+  engine      = phptemplate
+  screenshot  = screenshot.png
+  base theme  = adaptivetheme
+
+;----------// Modular stylesheets
+  stylesheets[all][] = css/html-elements.css
+  stylesheets[all][] = css/forms.css
+  stylesheets[all][] = css/tables.css
+  stylesheets[all][] = css/page.css
+  stylesheets[all][] = css/articles.css
+  stylesheets[all][] = css/comments.css
+  stylesheets[all][] = css/blocks.css
+  stylesheets[all][] = css/navigation.css
+  stylesheets[all][] = css/skins.css
+  ;stylesheets[all][] = css/dark.css
+
+;----------// IE Conditional Stylesheets
+  ; Requires the Conditional styles module - http://drupal.org/project/conditional_styles
+  ;conditional-stylesheets[if lte IE 7][all][] = css/ie/ie-lte-7.css
+
+;----------// Regions
+  regions[left]              = Sidebar First
+  regions[right]             = Sidebar Last
+  regions[content]           = Main Content
+  regions[content_top]       = Content Top
+  regions[content_bottom]    = Content Bottom
+  regions[content_aside]     = Content Aside
+  regions[content_front]     = Front Page Main Content
+  regions[leaderboard]       = Leaderboard
+  regions[header]            = Header Region
+  regions[menu_bar]          = Menu Bar
+  regions[secondary_content] = Secondary Content
+  regions[tertiary_content]  = Tertiary Content
+  regions[footer]            = Footer
+  regions[article_aside]     = Article Aside
+
+
+;----------// Gpanel Regions
+  ; 2 col 2x50
+  ;regions[two_col_2x50_first]  = 2col 2x50 Gpanel col 1
+  ;regions[two_col_2x50_second] = 2col 2x50 Gpanel col 2
+
+  ; 2 col 33-66
+  ;regions[two_col_33_66_first]  = 2col 33-66 Gpanel col 1
+  ;regions[two_col_33_66_second] = 2col 33-66 Gpanel col 2
+
+  ; 2 col 66-33
+  ;regions[two_col_66_33_first]  = 2col 66-33 Gpanel col 1
+  ;regions[two_col_66_33_second] = 2col 66-33 Gpanel col 2
+
+  ; 3 col 3x33
+  ;regions[three_col_3x33_first]  = 3col 3x33 Gpanel col 1
+  ;regions[three_col_3x33_second] = 3col 3x33 Gpanel col 2
+  ;regions[three_col_3x33_third]  = 3col 3x33 Gpanel col 3
+
+  ; 3 col 25-25-50
+  ;regions[three_col_25_25_50_first]  = 3col 25-25-50 Gpanel col 1
+  ;regions[three_col_25_25_50_second] = 3col 25-25-50 Gpanel col 2
+  ;regions[three_col_25_25_50_third]  = 3col 25-25-50 Gpanel col 3
+  
+  ; 3 col 50-25-25
+  ;regions[three_col_50_25_25_first]  = 3col 50-25-25 Gpanel col 1
+  ;regions[three_col_50_25_25_second] = 3col 50-25-25 Gpanel col 2
+  ;regions[three_col_50_25_25_third]  = 3col 50-25-25 Gpanel col 3
+  
+  ; 4 col
+  ;regions[four_col_first]  = 4col Gpanel col 1
+  ;regions[four_col_second] = 4col Gpanel col 2
+  ;regions[four_col_third]  = 4col Gpanel col 3
+  ;regions[four_col_fourth] = 4col Gpanel col 4
+
+  ; 5 col
+  ;regions[five_col_first]  = 5col Gpanel col 1
+  ;regions[five_col_second] = 5col Gpanel col 2
+  ;regions[five_col_third]  = 5col Gpanel col 3
+  ;regions[five_col_fourth] = 5col Gpanel col 4
+  ;regions[five_col_fifth]  = 5col Gpanel col 5
+
+  ; 6 col
+  ;regions[six_col_first]  = 6col Gpanel col 1
+  ;regions[six_col_second] = 6col Gpanel col 2
+  ;regions[six_col_third]  = 6col Gpanel col 3
+  ;regions[six_col_fourth] = 6col Gpanel col 4
+  ;regions[six_col_fifth]  = 6col Gpanel col 5
+  ;regions[six_col_sixth]  = 6col Gpanel col 6
+
+;----------// Skinr Styles
+  skinr[options][inherit_skins] = true
+
+;----------// Features
+  features[] = logo
+  features[] = name
+  features[] = slogan
+  features[] = mission
+  features[] = node_user_picture
+  features[] = comment_user_picture
+  features[] = search
+  features[] = favicon
+  features[] = primary_links
+  features[] = secondary_links
+
+;----------// Theme Setting Defaults
+  settings[skip_navigation_display]        = 'focus'
+  settings[breadcrumb_display]             = 'yes'
+  settings[breadcrumb_separator]           = ' &#187; '
+  settings[breadcrumb_home]                = 0
+  settings[breadcrumb_trailing]            = 0
+  settings[breadcrumb_title]               = 0
+  settings[display_search_form_label]      = 1
+  settings[search_snippet]                 = 1
+  settings[search_info_type]               = 1
+  settings[search_info_user]               = 1
+  settings[search_info_date]               = 1
+  settings[search_info_comment]            = 1
+  settings[search_info_upload]             = 1
+  settings[search_info_separator]          = ' - '
+  settings[extra_page_classes]             = 0
+  settings[extra_article_classes]          = 0
+  settings[extra_comment_classes]          = 0
+  settings[extra_block_classes]            = 0
+  settings[extra_menu_classes]             = 0
+  settings[extra_item_list_classes]        = 0
+  settings[primary_links_tree]             = 0
+  settings[secondary_links_tree]           = 0
+  settings[links_add_span_elements]        = 0
+  settings[at_user_menu]                   = 0
+  settings[block_edit_links]               = 1
+  settings[rebuild_registry]               = 0
+  settings[layout_method]                  = '0'
+  settings[layout_width]                   = '960px'
+  settings[layout_sidebar_first_width]     = '240'
+  settings[layout_sidebar_last_width]      = '240'
+  settings[layout_enable_settings]         = 'on'
+  settings[layout_enable_width]            = 'on'
+  settings[layout_enable_sidebars]         = 'on'
+  settings[layout_enable_method]           = 'on'
+  settings[equal_heights_sidebars]         = 0
+  settings[equal_heights_blocks]           = 0
+  settings[equal_heights_gpanels]          = 0
+  settings[horizontal_login_block]         = 0
+  settings[horizontal_login_block_enable]  = 'on'
+  settings[style_enable_schemes]           = 'off'
+  settings[style_schemes]                  = 'style-default.css'
+
+; Information added by drupal.org packaging script on 2010-10-25
+version = "6.x-3.0-rc2"
+core = "6.x"
+project = "adaptivetheme"
+datestamp = "1288000227"
+

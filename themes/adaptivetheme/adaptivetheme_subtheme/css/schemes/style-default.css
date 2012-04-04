@@ -1,0 +1,10 @@
+/** 
+ * $Id: style-default.css,v 1.1.2.2 2010/10/14 16:15:10 jmburnz Exp $
+ *
+ * Default Style Scheme 
+ */
+
+/* Debug style so you know its working. */
+#page {
+  background: yellow;
+}

@@ -1,0 +1,70 @@
+/** 
+ * $Id: blocks.css,v 1.1.2.2 2010/10/14 05:38:00 jmburnz Exp $
+ */
+
+/* Blocks. */
+.block {
+  margin: 0 0 20px;
+}
+
+.block-inner {}
+.block-title {}
+
+.mini-panel-title {
+  margin: 0 10px;
+}
+
+.sidebar .block {}
+.sidebar .block h2 {}
+.sidebar .block-inner {}
+
+#sidebar-first .block {}
+#sidebar-first .block h2 {}
+#sidebar-first .block-inner {}
+
+#sidebar-last .block {}
+#sidebar-last .block h2 {}
+#sidebar-last .block-inner {}
+
+.block ul li {
+  margin: 0 0 0 0.5em;
+}
+.block .item-list ul  {
+  margin-left: 1em;
+}
+
+#block-locale-0 ul {
+  margin: 0 0 0 1.5em;
+  padding: 0;
+}
+#block-locale-0 ul li {
+  padding: .35em 0 0;
+}
+#block-node-0 .feed-icon img {
+  padding:10px 0;
+}
+#search-block-form {
+  margin:0;
+}
+#block-user-3 .item-list h3 {
+  font-size:1em;
+}
+
+/* Gpanel blocks */
+.gpanel h2 {}
+.gpanel .block-inner {}
+.gpanel .block-content {}
+#main-content .gpanel h2 {}
+#main-content .gpanel .block-inner {}
+#main-content .gpanel .block-content {}
+#footer .block h2 {}
+#footer .block .block-inner {}
+#footer .block .block-content {}
+
+/* Block wrapper for Mini Panels */
+.block-panels_mini {}
+.block-panels_mini .block-inner {}
+.block-panels_mini .block-content {}
+.block-panels_mini .mini-panel-title {
+  margin: 0 10px;
+}

@@ -1,0 +1,40 @@
+/** 
+ * $Id: edit-links.css,v 1.1.2.1 2010/09/14 20:13:12 jmburnz Exp $
+ *
+ * @file
+ * Basic styles for block edit links.
+ */
+div.block-edit-links .edit-links {
+  position:absolute;
+  height:0;
+  right:10px;
+  top:.5em;
+  overflow:hidden;
+  z-index:99;
+  padding:0;
+}
+div.block-edit-links:hover .edit-links {
+  height:20px;
+  overflow:visible;
+}
+div.block-edit-links .edit-links a {
+  background-color:transparent;
+  display:block;
+  float:left;
+  outline:0;
+  text-indent:-999em;
+  width:18px;
+  padding:2px;
+}
+div.block-edit-links .edit-links a.edit-block-block {
+  background:transparent url(images/configure.png) no-repeat 2px 2px;
+}
+div.block-edit-links .edit-links a.edit-block-menu {
+  background:transparent url(images/edit.png) no-repeat 2px 2px;
+}
+div.view .views-admin-links {
+  font-size:.85em;
+}
+div.view .views-admin-links a:hover {
+  background:#FFF;
+}

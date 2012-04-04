@@ -1,0 +1,156 @@
+/** 
+ * $Id: forms.css,v 1.1.2.2 2010/10/14 05:38:00 jmburnz Exp $
+ */
+
+/* Forms */
+form {
+  margin:0 0 1.667em;
+  padding:0;
+}
+.form-item label {
+  font-weight: bold;
+}
+input {
+  margin:.375em 0;
+}
+input.title {
+  font-size:1.5em;
+}
+input.text,
+input.title,
+textarea,
+select {
+  border:1px solid silver;
+  margin:.375em 0;
+}
+.form-text:focus,
+.form-checkbox:focus,
+.form-radio:focus,
+.form-select:focus {
+  border:1px solid #FC0;
+  background:#FFFFDF;
+}
+textarea:focus {
+  border:1px solid #FC0;
+  background:#FFF;
+}
+input.text,
+input.title {
+  padding:.375em;
+}
+input.form-text,
+textarea {
+  border:1px solid #CCC;
+  height:auto;
+  padding:.1875em;
+}
+textarea,
+input {
+  font:1em normal Arial, Helvetica, sans-serif;
+}
+div.form-item {
+  margin-bottom:.833em;
+  margin-top:.833em;
+}
+.form-item textarea.error {
+  padding:.1875em;
+}
+.form-item .description,
+fieldset .description,
+.fieldset-layout-settings dd {
+  font-size:0.9em;
+  line-height:1.667em;
+}
+span.form-required,
+span.marker {
+  color:#8A1F11;
+}
+#article-admin-filter ul {
+  padding:.375em 0;
+}
+#edit-operation-wrapper select {
+  margin:.375em;
+}
+div.resizable-textarea textarea {
+  margin-top:0;
+}
+.tips {
+  font-size:1em;
+  margin-left:3em;
+  padding:.1875em .375em .1875em 1.5em;
+}
+fieldset {
+  background:transparent;
+  border:1px solid #dadada;
+  margin:1.5em 0;
+  padding:.75em;
+}
+*:first-child+html fieldset {
+  background-color:transparent;
+  background-position:0 .75em;
+  padding:0 1em .75em;
+}
+*:first-child+html fieldset > .description,
+*:first-child+html fieldset .fieldset-wrapper .description {
+  padding-top:1.5em;
+}
+fieldset legend {
+  display:block;
+  font-weight:700;
+  padding:0 1em 0 0;
+}
+*:first-child+html fieldset legend,
+*:first-child+html fieldset.collapsed legend {
+  display:inline;
+}
+html.js fieldset.collapsed {
+  background:transparent;
+  padding-top:.25em;
+}
+#user-login-form ul {
+  margin:0;
+  padding:0;
+}
+#user-login-form li.openid-link,
+#user-login-form li.user-link {
+  text-align:center;
+}
+#user-login ul {
+  margin:0 0 5px;
+}
+#user-login ul li {
+  margin:0;
+}
+#user-login-form .item-list li {
+  list-style:none;
+  margin:0;
+}
+#user-login-form li.openid-link,
+#user-login li.openid-link {
+  background:none;
+}
+.hide-label label {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+html.js #user-login-form li.openid-link,
+html.js #user-login li.openid-link,
+#user-admin-filter ul li,
+#article-admin-filter ul li {
+  list-style:none;
+}
+#node-form .vertical-tabs,
+#node-form .vertical-tabs-list,
+#node-form .vertical-tabs-list li {
+  border-color:#DADADA !important;
+}
+.vertical-tabs input.form-text {
+  width:95%;
+}
+.description {
+  color:#555;
+}
+.fieldset-advanced-theme-settings .description em {
+  font-weight:700;
+}

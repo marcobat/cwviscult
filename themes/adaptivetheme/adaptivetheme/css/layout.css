@@ -1,0 +1,253 @@
+/** 
+ * $Id: layout.css,v 1.1.2.2 2010/10/14 05:38:00 jmburnz Exp $
+ *
+ * @file
+ * Fallback layout and helpers.
+ */
+.two-sidebars .content-inner {
+  margin:0 240px;
+}
+.sidebar-first .content-inner {
+  margin-left:240px;
+}
+.sidebar-last .content-inner {
+  margin-right:240px;
+}
+#sidebar-first {
+  width:240px;
+  margin-left:-100%;
+}
+#sidebar-last {
+  width:240px;
+  margin-left:-240px;
+}
+
+/* Add padding to align elements to the grid. */
+.block,
+#user-menu,
+#skip-nav,
+#branding,
+#search-box,
+#mission,
+#primary-menu,
+#secondary-menu,
+#attribution,
+#breadcrumb,
+#main-content-header,
+#content,
+#messages-and-help,
+#footer-message {
+  padding:0 10px;
+}
+
+/* Grids. */
+.grid-1,
+.grid-2-12,
+.grid-2-16,
+.grid-3,
+.grid-4-16,
+.grid-4-12,
+.grid-5,
+.grid-6,
+.grid-7,
+.grid-8,
+.grid-9,
+.grid-10,
+.grid-11,
+.grid-12,
+.grid-13,
+.grid-14,
+.grid-15,
+.grid-16 {
+  float:left;
+  clear:none !important;
+  display:inline;
+}
+.grid-1 {
+  width:40px;
+}
+.grid-2-16 {
+  width:100px;
+}
+.grid-2-12 {
+  width:140px;
+}
+.grid-3 {
+width:160px;
+}
+.grid-4-16 {
+  width:220px;
+}
+.grid-4-12 {
+  width:300px;
+}
+.grid-5 {
+  width:280px;
+}
+.grid-6 {
+  width:340px;
+}
+.grid-7 {
+  width:400px;
+}
+.grid-8 {
+  width:460px;
+}
+.grid-9 {
+  width:520px;
+}
+.grid-10 {
+  width:580px;
+}
+.grid-11 {
+  width:640px;
+}
+.grid-12 {
+  width:700px;
+}
+.grid-13 {
+  width:760px;
+}
+.grid-14 {
+  width:820px;
+}
+.grid-15 {
+  width:880px;
+}
+.grid-16 {
+  width:940px;
+}
+
+/* Containers and layout helpers. */
+div.container {
+  position:relative;
+  width:960px;
+  margin:0 auto;
+}
+#main-content,
+#columns {
+  display:inline-block;
+  width:100%;
+}
+#main-content,
+.block {
+  position:relative;
+}
+.content-inner > #main-content,
+#page > #columns {
+  display:block;
+}
+#content-column,
+#sidebar-first,
+#sidebar-last,
+.at-horizontal-login label {
+  float:left;
+}
+#content-column {
+  width:100%;
+}
+.clear,
+#columns,
+#breadcrumb,
+#content-bottom,
+#secondary-content,
+#tertiary-content,
+#footer,
+#footer-region,
+#footer-message,
+.block,
+#block-admin-display-form,
+.fieldset-layout-settings .layout-method,
+.fieldset-layout-settings .layout-help,
+.fieldset-layout-settings .page-width {
+  clear:both;
+}
+
+/* Gpanels */
+.gpanel div.block {
+  padding:0 10px;
+}
+.gpanel {
+  clear:both;
+}
+.gpanel .region {
+  display:inline;
+  position:relative;
+  float:left;
+}
+.two-col-33-66 .col-2 {
+  width:66.333%;
+}
+.two-col-66-33 .col-1 {
+  width:66.666%;
+}
+/* 5 column */
+.five-col-5x20 .region {
+  width:20%;
+}
+.five-col-5x20 .col-5 {
+  width:19.75%;
+}
+/* 6 column */
+.six-col-6x16 .region {
+  width:16.666%;
+}
+.six-col-6x16 .col-6 {
+  width:16.333%;
+}
+.two-col-2x50 .col-1,
+.three-col-50-25-25 .col-1 {
+  width:50%;
+}
+.two-col-2x50 .col-2,
+.three-col-25-25-50 .col-3 {
+  width:49.5%;
+}
+.two-col-33-66 .region,
+.two-col-66-33 .region {
+  float:left;
+}
+.two-col-33-66 .col-1,
+.three-col-3x33 .region {
+  width:33.333%;
+}
+.two-col-66-33 .col-2,
+.three-col-3x33 .col-3 {
+  width:33%;
+}
+.three-col-25-25-50 .col-1,
+.three-col-25-25-50 .col-2,
+.three-col-50-25-25 .col-2,
+.four-col-4x25 .region {
+  width:25%;
+}
+.three-col-50-25-25 .col-3,
+.four-col-4x25 .col-4 {
+  width:24.5%;
+}
+
+/* Panels */
+.block-panels_mini {
+  padding: 0;
+}
+
+/* Enhanced universal clearfix */
+.clearfix:after {
+  content:" ";
+  clear:both;
+  display:block;
+  font-size:0;
+  height:0;
+  line-height: 0;
+  visibility:hidden;
+  width:0;
+}
+.clearfix {
+  display: inline-block;
+}
+/* start commented backslash hack \*/
+* html .clearfix {height:1%;}
+.clearfix {
+  display:block;
+}
+/* close commented backslash hack */

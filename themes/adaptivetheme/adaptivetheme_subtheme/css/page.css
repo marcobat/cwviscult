@@ -1,0 +1,151 @@
+/** 
+ * $Id: page.css,v 1.1.2.2 2010/10/14 05:38:00 jmburnz Exp $
+ */
+
+#header {
+  clear: both;
+}
+
+#branding {
+  float: left;
+  width: 300px;
+}
+
+h1.brand-elements {
+  font-size:1em;
+}
+.brand-elements span {
+  display: block;
+}
+#logo {
+  float: left;
+}
+#site-name {
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1.5;
+}
+#site-name a:link    {}
+#site-name a:visited {}
+#site-name a:hover   {}
+#site-name a:focus   {}
+#site-name a:active  {}
+
+#header-region {
+  float: left;
+  width: 320px;
+}
+
+#mission {
+  font-weight: 700;
+  margin: .3em 0 1.5em;
+}
+
+h1#page-title {}
+.in-maintenance h1#page-title {
+  padding:10px;
+}
+
+/* Sidebars */
+.sidebar {}
+#sidebar-first {}
+#sidebar-last {}
+
+/* Footer */
+#footer {}
+#footer-region {}
+#footer-region a {}
+#footer-message {}
+#footer-message a {}
+
+/* Feed icons */
+.feed-icon img {
+  padding:0 10px;
+}
+#feed-icons {}
+#feed-icons .feed-icon {}
+#feed-icons .feed-icon img {}
+#feed-icons a.feed-icon {}
+
+/* Search */
+#search-block-form {}
+
+/* Wrapper DIVs. */
+#search-block-form > div {}
+#search-block-form .container-inline{}
+#edit-search-block-form-1-wrapper {}
+
+#search-block-form label {}
+#search-block-form input {}
+
+#search-block-form .form-submit {}
+#search-block-form .form-text {}
+
+#edit-search-block-form-1:hover,
+#edit-search-block-form-1:focus {}
+
+/* Search box */
+#search-box {
+  float: right;
+  width: 300px;
+}
+#search-theme-form {
+  float: right;
+  margin: 1.5em 0;
+}
+
+#search-theme-form > div {}
+#search-theme-form #search {}
+#edit-search-theme-form-1-wrapper {}
+
+#search-theme-form label {}
+#search-theme-form input {}
+
+#search-theme-form .form-text {}
+#search-theme-form .form-submit {}
+
+/* Advanced search form */
+#search-form {}
+#search-form > div {}
+#search-form .container-inline {}
+#search-form #edit-keys-wrapper {}
+
+#search-form label {}
+#search-form input {}
+#search-form .form-item {}
+#search-form .form-submit {}
+
+/* Textfield styles. */
+#search-form #edit-keys-wrapper input {}
+#search-form #edit-keys-wrapper input:hover,
+#search-form #edit-keys-wrapper input:focus {}
+
+/* Advanced search fieldset. */
+#search-form fieldset.search-advanced {}
+
+/* Box styles for the results page. */
+.section-search .box {}
+.section-search .box-inner {}
+.section-search .box-title {}
+
+/* Style the no results messages. */
+.section-search .box ul {}
+.section-search .box ul li {}
+
+/* Search results document list. */
+dl.search-results {}
+dl.search-results dt {}
+dl.search-results dd {}
+dl.search-results dd p {}
+dl.search-results dd .search-snippet {}
+dl.search-results dd .search-info {}
+
+span.search-info-type {}
+span.search-info-user {}
+span.search-info-date {}
+span.search-info-comment {}
+span.search-info-upload  {}
+
+/* Button Wrappers */
+span.button-wrapper {} /* Outer wrapper */
+span.button {} /* Inner wrapper */

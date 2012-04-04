@@ -1,0 +1,118 @@
+/** 
+ * $Id: skins.css,v 1.1.2.1 2010/09/14 20:13:12 jmburnz Exp $
+ */
+
+/* Content alignment */
+.at-center-content,
+.at-center-content ul.menu,
+.at-center-content.item-list ul {
+  text-align:center;
+  margin:0;
+}
+.at-center-content ul.menu li,
+.at-center-content.item-list ul li {
+  list-style:none;
+  margin:0;
+}
+.at-align-right-content,
+.at-align-right-content ul.menu,
+.at-align-right-content.item-list ul {
+  text-align:right;
+  margin:0;
+}
+.at-align-left-content,
+.at-align-left-content ul.menu,
+.at-align-left-content.item-list ul {
+  text-align:left;
+  margin:0;
+}
+
+/* Horizontal login */
+.at-horizontal-login #user-login-form {
+  text-align:left;
+}
+.at-horizontal-login .form-item,
+.at-horizontal-login .form-submit {
+  float:left;
+  padding:0 .5em;
+}
+.at-horizontal-login #user-login-form ul {
+  float:left;
+  margin:.94em 0 0;
+}
+.at-horizontal-login #user-login-form ul li {
+  float:left;
+  display:inline;
+}
+.at-horizontal-login input {
+  margin:0;
+}
+.at-horizontal-login .button-wrapper input {
+  margin:.75em .5em 0;
+}
+.at-horizontal-login #user-login-form li a {
+  padding:0 .75em 0 0;
+}
+.at-horizontal-login #user-login-form li.openid-link a,
+.at-horizontal-login #user-login li.openid-link a {
+  padding:0 20px;
+}
+
+.at-inline-menu ul.menu,
+.at-multicolumn-menu .block-content ul {
+  margin:0;
+  padding:0;
+}
+
+/* Inline menu */
+.at-inline-menu {
+  margin-bottom:.5em;
+}
+.at-inline-menu ul.menu li {
+  display:inline;
+  float:left;
+  white-space:nowrap;
+  list-style:none;
+  list-style-image:none;
+  margin:0;
+  padding:0;
+}
+.at-inline-menu ul.menu li a {
+  padding:0 .5em;
+}
+.at-inline-menu ul li.expanded ul {
+  display:none;
+}
+
+/* Multi-column menu */
+.at-multicolumn-menu .block-content {
+  overflow:auto;
+}
+.at-multicolumn-menu .block-content ul li {
+  display:block;
+  font-weight:700;
+  float:left;
+  width:160px;
+  list-style:none;
+  list-style-image:none;
+  margin:0;
+}
+.at-multicolumn-menu .block-content ul li.expanded ul {
+  display:block;
+  margin-left:0;
+  width:160px;
+}
+.at-multicolumn-menu .block-content ul li.expanded ul li {
+  border:none;
+  display:block;
+}
+.at-multicolumn-menu .block-content ul.menu li ul.menu li {
+  font-weight:400;
+}
+.at-horizontal-login h2,
+.at-inline-menu h2,
+.at-multicolumn-menu h2 {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}

@@ -1,0 +1,38 @@
+/** 
+ * $Id: base.css,v 1.2.2.5 2010/10/14 05:38:00 jmburnz Exp $
+ */
+
+/* Reset */
+body,
+h1,h2,h3,h4,h5,h6,
+h1 img,h2 img,h3 img,h4 img,h5 img,h6 img,
+em,dfn,del,ins,
+a,
+tbody,tfoot,thead,tr,
+li,
+label,legend {
+  margin: 0;
+  padding: 0;
+}
+
+/* Accessibility helpers */
+.offscreen {
+  position: absolute;
+  top: -9999em;
+  left: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.element-hidden {
+  display: none;
+}
+.element-invisible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+.element-focusable {
+  position: static !important;
+  clip: auto;
+}

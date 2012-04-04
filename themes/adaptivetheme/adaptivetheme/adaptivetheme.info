@@ -1,0 +1,169 @@
+; $Id: adaptivetheme.info,v 1.2.2.5 2010/10/25 08:55:44 jmburnz Exp $
+
+;----------// Theme Information
+
+  name        = AdaptiveTheme
+  description = A starter theme for Drupal Rockstars by <b><a href="http://adaptivethemes.com">AdaptiveThemes</a></b>. For help see our <b><a href="http://adaptivethemes.com/documentation/base-theme">documentation</a></b> and <b><a href="http://vimeo.com/channels/61157">video tutorials</a></b>. If you have a problem and need additional help or wish to post a bug report please use the <b><a href="http://drupal.org/project/issues/adaptivetheme">issue queue</a></b>.
+  core        = 6.x
+  engine      = phptemplate
+  screenshot  = screenshot.png
+
+
+;----------// Stylesheets
+
+  stylesheets[all][] = css/layout.css
+  stylesheets[all][] = css/base.css
+  stylesheets[all][] = css/messages.css
+
+
+;----------// jQuery Plugins and JavaScripts
+
+  scripts[] = js/at-scripts.js
+
+
+;----------// Regions
+
+  regions[left]              = Sidebar First
+  regions[right]             = Sidebar Last
+  regions[content]           = Main Content
+  regions[content_top]       = Content Top
+  regions[content_bottom]    = Content Bottom
+  regions[content_aside]     = Content Aside
+  regions[content_front]     = Front Page Main Content
+  regions[leaderboard]       = Leaderboard
+  regions[header]            = Header Region
+  regions[menu_bar]          = Menu Bar
+  regions[secondary_content] = Secondary Content
+  regions[tertiary_content]  = Tertiary Content
+  regions[footer]            = Footer
+  regions[article_aside]     = Article Aside
+
+;----------// Panels
+
+  plugins[panels][layouts] = panels
+
+
+;----------// Skinr Styles
+
+  ; The following classes require the Skinr module, http://drupal.org/project/skinr
+  ; Adaptivetheme includes native support for Skinr classes on nodes, blocks and views.
+
+  ; Grids - 960px, 16 column grid classes, with a single 12 grid class (4-12 for 3x320 layout)
+  skinr[at-grid][title] = Width
+  skinr[at-grid][type] = select
+  skinr[at-grid][description] = Select the width for this block. All blocks with widths set will float left to align themselves horizontally. A block with no width set will take up the full with of the region (and clear the other blocks above it). This allows you to build complex block layouts in sidebars and other regions.
+  skinr[at-grid][features][] = block
+  
+  skinr[at-grid][options][1][label] = 60px
+  skinr[at-grid][options][1][class] = grid-1
+  skinr[at-grid][options][2][label] = 120px
+  skinr[at-grid][options][2][class] = grid-2-16
+  skinr[at-grid][options][3][label] = 160px
+  skinr[at-grid][options][3][class] = grid-2-12
+  skinr[at-grid][options][4][label] = 180px
+  skinr[at-grid][options][4][class] = grid-3
+  skinr[at-grid][options][5][label] = 240px
+  skinr[at-grid][options][5][class] = grid-4-16
+  
+  skinr[at-grid][options][6][label] = 300px
+  skinr[at-grid][options][6][class] = grid-5
+  skinr[at-grid][options][7][label] = 320px
+  skinr[at-grid][options][7][class] = grid-4-12
+  skinr[at-grid][options][8][label] = 360px
+  skinr[at-grid][options][8][class] = grid-6
+  skinr[at-grid][options][9][label] = 420px
+  skinr[at-grid][options][9][class] = grid-7
+  skinr[at-grid][options][10][label] = 480px
+  skinr[at-grid][options][10][class] = grid-8
+  
+  skinr[at-grid][options][11][label] = 540px
+  skinr[at-grid][options][11][class] = grid-9
+  skinr[at-grid][options][12][label] = 600px
+  skinr[at-grid][options][12][class] = grid-10
+  skinr[at-grid][options][13][label] = 660px
+  skinr[at-grid][options][13][class] = grid-11
+  skinr[at-grid][options][14][label] = 720px
+  skinr[at-grid][options][14][class] = grid-12
+ 
+  skinr[at-grid][options][15][label] = 780px
+  skinr[at-grid][options][15][class] = grid-13
+  skinr[at-grid][options][16][label] = 840px
+  skinr[at-grid][options][16][class] = grid-14
+  skinr[at-grid][options][17][label] = 900px
+  skinr[at-grid][options][17][class] = grid-15
+  skinr[at-grid][options][18][label] = 960px
+  skinr[at-grid][options][18][class] = grid-16
+  
+  ; Content alignment
+  skinr[at-align-content][title] = Content alignment
+  skinr[at-align-content][type] = select
+  skinr[at-align-content][features][] = block
+  skinr[at-align-content][features][] = node
+  skinr[at-align-content][options][1][label] = Center content within its container
+  skinr[at-align-content][options][1][class] = at-center-content
+  skinr[at-align-content][options][2][label] = Align content to the right within its container
+  skinr[at-align-content][options][2][class] = at-align-right-content
+  skinr[at-align-content][options][3][label] = Align content to the left within its container
+  skinr[at-align-content][options][3][class] = at-align-left-content
+
+  ; Additional menu styles
+  skinr[at-menu][title] = Menu layout
+  skinr[at-menu][type] = select
+  skinr[at-menu][description] = Different layouts and alignment options for your menus
+  skinr[at-menu][features][] = block
+  skinr[at-menu][options][1][label] = Horizontal inline menu
+  skinr[at-menu][options][1][class] = at-inline-menu clearfix
+  skinr[at-menu][options][2][label] = Multi-column menu with headers
+  skinr[at-menu][options][2][class] = at-multicolumn-menu clearfix
+
+
+;----------// Theme Setting Defaults
+
+  settings[skip_navigation_display]        = 'focus'
+  settings[breadcrumb_display]             = 'yes'
+  settings[breadcrumb_separator]           = ' &#187; '
+  settings[breadcrumb_home]                = 0
+  settings[breadcrumb_trailing]            = 0
+  settings[breadcrumb_title]               = 0
+  settings[display_search_form_label]      = 1
+  settings[search_snippet]                 = 1
+  settings[search_info_type]               = 1
+  settings[search_info_user]               = 1
+  settings[search_info_date]               = 1
+  settings[search_info_comment]            = 1
+  settings[search_info_upload]             = 1
+  settings[search_info_separator]          = ' - '
+  settings[extra_page_classes]             = 0
+  settings[extra_article_classes]          = 0
+  settings[extra_comment_classes]          = 0
+  settings[extra_block_classes]            = 0
+  settings[extra_menu_classes]             = 0
+  settings[extra_item_list_classes]        = 0
+  settings[primary_links_tree]             = 0
+  settings[secondary_links_tree]           = 0
+  settings[links_add_span_elements]        = 0
+  settings[at_user_menu]                   = 0
+  settings[block_edit_links]               = 1
+  settings[rebuild_registry]               = 0
+  settings[layout_method]                  = '0'
+  settings[layout_width]                   = '960px'
+  settings[layout_sidebar_first_width]     = '240'
+  settings[layout_sidebar_last_width]      = '240'
+  settings[layout_enable_settings]         = 'on'
+  settings[layout_enable_width]            = 'on'
+  settings[layout_enable_sidebars]         = 'on'
+  settings[layout_enable_method]           = 'on'
+  settings[equal_heights_sidebars]         = 0
+  settings[equal_heights_blocks]           = 0
+  settings[equal_heights_gpanels]          = 0
+  settings[horizontal_login_block]         = 0
+  settings[horizontal_login_block_enable]  = 'on'
+  settings[style_schemes]                  = 'style-default.css'
+  settings[style_enable_schemes]           = 'off'
+
+; Information added by drupal.org packaging script on 2010-10-25
+version = "6.x-3.0-rc2"
+core = "6.x"
+project = "adaptivetheme"
+datestamp = "1288000227"
+

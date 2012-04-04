@@ -1,0 +1,82 @@
+; $Id: adaptivetheme_admin.info,v 1.2.2.3 2010/10/25 08:55:44 jmburnz Exp $
+
+;----------// Theme Information
+  name        = AT Admin
+  description = Clean, usable administration theme with five color options.
+  core        = 6.x
+  engine      = phptemplate
+  screenshot  = screenshot.png
+  base theme  = adaptivetheme
+
+
+;----------// Stylesheets
+  stylesheets[all][] = css/at-admin.css
+
+
+;----------// Skinr Styles
+  skinr[options][inherit_skins] = true
+
+
+;----------// Regions
+  regions[content] = Main Content
+  regions[left]    = Sidebar First
+  regions[right]   = Sidebar Last
+  regions[footer]  = Footer
+
+
+;----------// Features
+  features[] = name
+  features[] = favicon
+  features[] = primary_links
+  features[] = secondary_links
+
+
+;----------// Theme Settings
+  settings[skip_navigation_display]        = 'focus'
+  settings[breadcrumb_display]             = 'yes'
+  settings[breadcrumb_separator]           = ' &#8594; '
+  settings[breadcrumb_home]                = 0
+  settings[breadcrumb_trailing]            = 0
+  settings[breadcrumb_title]               = 0
+  settings[display_search_form_label]      = 1
+  settings[search_snippet]                 = 1
+  settings[search_info_type]               = 1
+  settings[search_info_user]               = 1
+  settings[search_info_date]               = 1
+  settings[search_info_comment]            = 1
+  settings[search_info_upload]             = 1
+  settings[search_info_separator]          = ' - '
+  settings[extra_page_classes]             = 0
+  settings[extra_article_classes]          = 0
+  settings[extra_comment_classes]          = 0
+  settings[extra_block_classes]            = 0
+  settings[extra_menu_classes]             = 0
+  settings[extra_item_list_classes]        = 0
+  settings[primary_links_tree]             = 0
+  settings[secondary_links_tree]           = 0
+  settings[links_add_span_elements]        = 0
+  settings[at_user_menu]                   = 0
+  settings[block_edit_links]               = 1
+  settings[rebuild_registry]               = 0 
+  settings[layout_method]                  = '0'
+  settings[layout_width]                   = '95%'
+  settings[layout_sidebar_first_width]     = '240'
+  settings[layout_sidebar_last_width]      = '240'
+  settings[layout_enable_settings]         = 'on'
+  settings[layout_enable_width]            = 'on'
+  settings[layout_enable_sidebars]         = 'on'
+  settings[layout_enable_method]           = 'on'
+  settings[equal_heights_sidebars]         = 0
+  settings[equal_heights_blocks]           = 0
+  settings[equal_heights_gpanels]          = 0
+  settings[horizontal_login_block]         = 0
+  settings[horizontal_login_block_enable]  = 'on'
+  settings[style_schemes]                  = 'onyx.css'
+  settings[style_enable_schemes]           = 'on'
+
+; Information added by drupal.org packaging script on 2010-10-25
+version = "6.x-3.0-rc2"
+core = "6.x"
+project = "adaptivetheme"
+datestamp = "1288000227"
+
